@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(21, 32, 51);
+  color: white;
+}
+
+li,
+a,
+button,
+.fa-home {
+  font-family: "montseraat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgb(35, 166, 199);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: rgb(255, 255, 255);
+}
+
+button:hover {
+  background-color: rgba(26, 186, 226, 0.8);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  margin-bottom: 75px;
+}
+.fa-home,
+.fa-user,
+.fa-shopping-cart {
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+.fa-home:hover {
+  color: rgba(26, 186, 226, 0.8);
+}
+.fa-user:hover {
+  color: rgba(26, 186, 226, 0.8);
+}
+.fa-shopping-cart:hover {
+  color: rgba(26, 186, 226, 0.8);
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  border: 3px solid rgb(216, 59, 2);
+  margin: 5px;
+  padding: 0px 20px;
+}
+.h {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav_links li {
+    display: list-item;
+  }
+}
+a,
+link {
+  transition: all 0.3s ease 0s;
+}
+
+link,
+a:hover {
+  color: rgba(26, 186, 226, 0.8);
+}
+button:hover {
+  color: rgba(10, 69, 83, 0.8);
+}
+
+#cart_count {
+  border: 2px solid white;
+  font-size: 20px;
+  background-color: rgb(216, 59, 2);
+  border-radius: 50%;
+}
+#center {
+  margin-top: 150px;
+  text-align: center;
+}
+
+/* login form and add product form */
+
+#addProduct {
+  font-size: 40px;
+}
+.container-form {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 20%;
+}
+.wrapper-form {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper-form input {
+  width: 300px;
+  height: 26px;
+  border: 1px solid #cccccc;
+  background-color: #f5f5f5;
+  font-size: 18px;
+  margin: 20px auto;
+  display: block;
+  position: relative;
+  color: rgba(20, 119, 141, 0.8);
+}
+.wrapper-form h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+#link {
+  text-decoration: underline;
+}
+
+/* the style of the products for customers */
+
+.elements {
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 90px;
+}
+.product {
+  border-radius: 20%;
+  float: left;
+  width: 18%;
+  min-width: 300px;
+  padding: 20px;
+  margin: 20px 20px 20px 20px;
+}
+
+.product img {
+  border-radius: 20%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+/* Welcome message */
+.welcomeMessage {
+  margin-top: 150px;
+  text-align: center;
+}
+
+/* Cart items details */
+.cart-page {
+  margin-top: 100px;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#photo {
+  float: left;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  background-color: #ff523b;
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a {
+  color: #ff523b;
+  font-size: 12px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 400px;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+#product {
+  width: 250px;
+}
+
+/* errors */
+.validfeedbackYellow {
+  color: yellow;
+}
+
+/* errors */
+.invalidfeedback {
+  color: #ff0000;
+}
+/* actions succefully done */
+.validfeedback {
+  color: #0dc234;
+}
+
+/* Account styling */
+
+.account {
+  margin: 0 auto;
+  padding: 20px;
+  width: 75%;
+}
+
+.account button {
+  padding: 5px 5px;
+}
+
+.email,
+.pwd {
+  background-color: rgb(228, 94, 61);
+  margin: 40px auto;
+  padding: 10px;
+  width: 75%;
+  height: auto;
+  text-align: right;
+}
+
+.title {
+  font-size: 30px;
+  margin: 10px auto;
+  height: 50px;
+  padding: 10px;
+}
+
+div.a {
+  text-align: center;
+  font-size: 30px;
+}
+
+.content {
+  font-size: 20px;
+  margin: 0 auto;
+  height: auto;
+  padding: 30px;
+}
+.content input {
+  font-size: 14px;
+  display: block;
+  text-align: left;
+  margin: 5px auto;
+  width: 60%;
+  width: 250px;
+  padding: 5px;
+}
+#right {
+  float: right;
+}
+#left {
+  float: left;
+}
+
+.error {
+  text-align: center;
+}
+
+#amount {
+  border-radius: 50%;
+  background-color: rgb(212, 82, 42);
+}
+#number {
+  font-size: 25px;
+}
+.center {
+  text-align: center;
+}
+
+/* Quantity */
+
+.fa-plus,
+.fa-minus {
+  color: orangered;
+}
+#qty {
+  font-size: 24px;
+}
+
+/* contact from */
+.contact-form {
+  width: 85%;
+  max-width: 600px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-form h1 {
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.txtb {
+  border-radius: 1px solid rgb(255, 255, 255);
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.txtb label {
+  display: block;
+  text-align: left;
+  color: rgba(26, 186, 226, 0.8);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.txtb input,
+.txtb textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+.btn {
+  display: inline-block;
+  background: #9b59b6;
+  padding: 14px 0;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
